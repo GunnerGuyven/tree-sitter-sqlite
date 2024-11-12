@@ -4385,6 +4385,7 @@
   {
     "type": "sql_stmt_list",
     "named": true,
+    "root": true,
     "fields": {},
     "children": {
       "multiple": true,
