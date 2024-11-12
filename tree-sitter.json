@@ -1,0 +1,37 @@
+{
+  "grammars": [
+    {
+      "name": "sqlite",
+      "camelcase": "Sqlite",
+      "scope": "source.sql",
+      "path": ".",
+      "file-types": [
+        "sql"
+      ],
+      "highlights": "queries/highlights.scm",
+      "injection-regex": "^(sql)$"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "SQLite grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "guyven",
+        "email": "guyven@pm.me"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/GunnerGuyven/tree-sitter-sqlite"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true
+  }
+}
