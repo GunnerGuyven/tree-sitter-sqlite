@@ -1,4 +1,4 @@
-module github.com/gunnerguyven/tree-sitter-sqlite
+module github:gunnerguyven/tree-sitter-sqlite
 
 go 1.22
 

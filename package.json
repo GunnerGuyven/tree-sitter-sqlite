@@ -1,14 +1,31 @@
 {
   "name": "tree-sitter-sqlite",
   "version": "0.1.0",
-  "description": "SQLite grammar for tree-sitter",
-  "repository": "github:GunnerGuyven/tree-sitter-sqlite",
+  "description": "Sqlite grammar for tree-sitter",
+  "repository": "github:tree-sitter/tree-sitter-sqlite",
   "author": "guyven <guyven@pm.me>",
   "contributors": [
     "H11",
     "guyven <guyven@pm.me>"
   ],
   "license": "MIT",
+  "main": "bindings/node",
+  "types": "bindings/node",
+  "keywords": [
+    "incremental",
+    "parsing",
+    "tree-sitter",
+    "sqlite"
+  ],
+  "files": [
+    "grammar.js",
+    "binding.gyp",
+    "prebuilds/**",
+    "bindings/node/*",
+    "queries/*",
+    "src/**",
+    "*.wasm"
+  ],
   "dependencies": {
     "node-addon-api": "^8.1.0",
     "node-gyp-build": "^4.8.2"
@@ -31,6 +48,10 @@
     "start": "tree-sitter playground",
     "test": "node --test bindings/node/*_test.js"
   },
-  "main": "bindings/node"
+  "tree-sitter": [
+    {
+      "scope": "source.sqlite",
+      "injection-regex": "^sqlite$"
+    }
+  ]
 }
-

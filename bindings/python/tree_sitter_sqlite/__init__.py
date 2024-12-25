@@ -1,4 +1,4 @@
-"""SQLite grammar for tree-sitter"""
+"""Sqlite grammar for tree-sitter"""
 
 from importlib.resources import files as _files
 

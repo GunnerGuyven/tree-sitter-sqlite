@@ -2,8 +2,8 @@ cmake_minimum_required(VERSION 3.13)
 
 project(tree-sitter-sqlite
         VERSION "0.1.0"
-        DESCRIPTION "SQLite grammar for tree-sitter"
-        HOMEPAGE_URL "https://github.com/gunnerguyven/tree-sitter-sqlite"
+        DESCRIPTION "Sqlite grammar for tree-sitter"
+        HOMEPAGE_URL "github:gunnerguyven/tree-sitter-sqlite"
         LANGUAGES C)
 
 option(BUILD_SHARED_LIBS "Build using shared libraries" ON)
@@ -58,3 +58,4 @@ add_custom_target(test "${TREE_SITTER_CLI}" test
                   COMMENT "tree-sitter test")
 
 # vim:ft=cmake:
+
